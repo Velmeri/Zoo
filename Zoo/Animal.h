@@ -7,13 +7,19 @@ using namespace std;
 class Animal
 {
 protected:
-	string name;
-	int age;
+	string name = "John Doe";
+	int age = 0;
 public:
-	virtual void print() = 0;
-	void inpute() {
+	void Print() {
+		cout << "\tName: " << name;
+		if (age != 0)
+			cout << "\n\tAge: " << age;
+		else
+			cout << "Age: Unknown";
+	}
+	void Inpute() {
 		cout << "\tName?: ";
-		cin >> name;
+		getline(cin, name);
 		cout << "\n\tAge?: ";
 		cin >> age;
 	}

@@ -5,10 +5,9 @@ using namespace std;
 int main() {
 	Penguin A;
 	cout << endl;
-	A.Inpute();
-	cout << endl;
 	A.Print();
 	cout << endl << endl;
+	cout << A.GetCount();
 
 	return 0;
 }

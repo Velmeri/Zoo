@@ -9,7 +9,19 @@ class Animal
 protected:
 	string name = "John Doe";
 	int age = 0;
+	static int num;
 public:
+	Animal() {
+		num++;
+	}
+	Animal(string name, int age) {
+		this->name = name;
+		this->age = age;
+		num++;
+	}
+	~Animal() {
+		num++;
+	}
 	void Print() {
 		cout << "\tName: " << name;
 		if (age != 0)
@@ -23,5 +35,10 @@ public:
 		cout << "\n\tAge?: ";
 		cin >> age;
 	}
+	int GetCount() {
+		return num;
+	}
 };
+
+int Animal::num = 0;
 

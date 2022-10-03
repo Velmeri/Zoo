@@ -46,5 +46,5 @@ public:
 };
 
 int Animal::num = 0;
-int Animal::JD_num = 0;
+int Animal::JD_num = 1;
 

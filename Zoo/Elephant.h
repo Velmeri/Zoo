@@ -10,4 +10,7 @@ public:
         Animal::Print();
         cout << "\n\tInformation: Penguins (order Sphenisciformes, family Spheniscidae) are a group of aquatic flightless birds.";
     }
+    string Voice() {
+        return "Trumpeting";
+    }
 };

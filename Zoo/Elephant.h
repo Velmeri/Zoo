@@ -5,10 +5,11 @@ class Elephant : public Animal
 {
 private:
 public:
-
+    Elephant() : Animal() {}
+    Elephant(string name, int age) : Animal(name, age) {}
     void Print() {
         Animal::Print();
-        cout << "\n\tInformation: Penguins (order Sphenisciformes, family Spheniscidae) are a group of aquatic flightless birds.";
+        cout << "\n\t\Information: Elephants are the largest existing land animals.";
     }
     string Voice() {
         return "Trumpeting";

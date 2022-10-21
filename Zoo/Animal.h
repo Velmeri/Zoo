@@ -24,25 +24,7 @@ public:
 	~Animal() {
 		num++;
 	}
-	void Print() {
-		cout << "\tName: " << name;
-		if (age != 0)
-			cout << "\n\tAge: " << age;
-		else
-			cout << "\n\tAge: Unknown";
-	}
-	void Inpute() {
-		cout << "\tName?: ";
-		getline(cin, name);
-		cout << "\n\tAge?: ";
-		cin >> age;
-		JD_num--;
-	}
-	int GetCount() {
-		return num;
-	}
-
-	virtual string Voice() = 0;
+	
 };
 
 int Animal::num = 0;

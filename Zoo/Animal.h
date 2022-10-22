@@ -24,6 +24,9 @@ public:
 	~Animal() {
 		num++;
 	}
+
+	virtual void Move() = 0;
+	virtual void Eat() = 0;
 	
 };
 

@@ -1,11 +1,18 @@
 #pragma once
-#include "Animal.h"
+#include "Bird.h"
 
-class Parrot : public Animal
+class Parrot : 
+    public Bird
 {
 private:
 public:
-    Parrot() : Animal() {}
-    Parrot(string name, int age) : Animal(name, age) {}
+    Parrot() : Bird() {}
+    Parrot(string name, int age) : Bird(name, age) {}
     
+    void Eat() {
+        cout << " eating corn";
+    };
+    void Fly() {
+        cout << name << " is flying";
+    }
 };

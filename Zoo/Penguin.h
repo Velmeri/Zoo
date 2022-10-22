@@ -1,12 +1,18 @@
 ﻿#pragma once
-#include "Animal.h"
+#include "Bird.h"
 
 class Penguin :
-    public Animal
+    public Bird
 {
 private:
 public:
-    Penguin() : Animal(){}
-    Penguin(string name, int age) : Animal(name, age){}
+    Penguin() : Bird(){}
+    Penguin(string name, int age) : Bird(name, age){}
     
+    void Fly() {
+        cout << name << " can't flying but " << name << " can swim";
+    }
+    void Eat() {
+        cout << name << " eating fish";
+    }
 };
